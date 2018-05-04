@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+D:\Mis documentos\Convenios\Automatización\com.bancolombia.base\.metadata\.plugins\org.eclipse.jdt.core
+3141958188.index
+2272273464.index
+427018770.index

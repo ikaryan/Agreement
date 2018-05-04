@@ -1,0 +1,4 @@
+2018-04-30 10:57:22,341 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-04-30 11:04:28,721 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.choucair.base:com.choucair.base:1.0 @ D:\eclipse\Proyectos\com.choucair.retos\pom.xml.
+2018-04-30 11:04:33,155 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.choucair.base:com.choucair.base:1.0 @ D:\eclipse\Proyectos\com.choucair.retos\pom.xml.
+2018-04-30 11:04:54,862 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.choucair.base:com.choucair.base:1.0 @ D:\eclipse\Proyectos\com.choucair.retos\pom.xml.
