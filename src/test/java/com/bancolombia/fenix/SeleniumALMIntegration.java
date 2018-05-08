@@ -13,8 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import atu.alm.wrapper.ALMServiceWrapper;
 import atu.alm.wrapper.ITestCase;
-import atu.alm.wrapper.ITestCaseRun;
-import atu.alm.wrapper.enums.StatusAs;
+//import atu.alm.wrapper.ITestCaseRun;
+//import atu.alm.wrapper.enums.StatusAs;
 import atu.alm.wrapper.exceptions.ALMServiceException;
 
 public class SeleniumALMIntegration {

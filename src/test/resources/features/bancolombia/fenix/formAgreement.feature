@@ -21,23 +21,30 @@ Feature: Formulario Vinculacion Convenios
   Yo como Usuario de la Gerencia de Producto de TDC necesito tener una pantalla 
   para realizar la vinculación de los convenios.
 
-  @EscenarioCreacion
-  Scenario: Creación convenio exitosamente
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  @EscenarioCreacionExitosa
+  Scenario Outline: Diligenciar de forma exitosa el formulario para la creación de convenios
+    Given Verificar ingreso opción Convenios
+    When Ingresar los datos requeridos del formulario
+    |<codconvenio>|<razonsocial>|<tipodoc>|<nrodoc>|<cupoconvenio>|<ciudad>|<comision>|<estado>|<tipocuenta>|<nrocuenta>|<tipotarjeta>|<tipoextracto>|<bin>|<logo>|<contacto>|<telcontacto>|<correocontacto>|<nombreejecutivo>|<codgerenciador>|
+    Then Guardar registro
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+|100	|Country			|Nit									|123456789	|10000000	|Medellín|0,5	|Activo			|Ahorros	|00100120801	|Física	|Físico	|852123	|700|
+|100	|Country			|Nit									|123456789	|10000000	|Medellín|0,5	|Activo			|Ahorros	|00100120801	|Física	|Físico	|852123	|700|
+|150	|Odebrecht		|Nit									|4443355		|0				|Medellín|0,5	|Activo			|Ahorros	|00100123217	|Física	|Físico	|852123	|700|
+|2222	|Lina Granada	|Cédula de ciudadanía	|12344567898|34545456	|Calí	 	 |0		|Activo			|Ahorros	|00100123333	|Virtual|Virtual|852123	|700|
+|200	|Versalles		|Cédula de ciudadanía	|9999999		|2000000	|Bogotá	 |0,5	|Activo			|Ahorros	|00100103018	|Virtual|Físico	|852123	|700|
+|300	|Paisapan			|Cédula de extrajería	|888888			|300000000|Cali	 	 |1		|Activo			|Corriente|00100103018	|Virtual|Virtual|852123	|700|
+|400	|JuanchoLlanta|Cédula de ciudadanía	|333333			|4000000	|Pereira |2		|Inactivo		|Corriente|00100120999	|Física	|Virtual|852123	|700|
+|555	|MamaInes			|Nit									|55555			|20000000	|Armenia |0,8	|Suspendido	|Ahorros	|00100120888	|Virtual|Físico	|852123	|700|
+|666	|Pepito				|Cédula de extrajería	|11111111		|-200000	|Cucuta	 |2		|Activo			|Corriente|001001030111	|Física	|Físico	|852123	|700|
+|7777	|Flota Aerea	|Nit									|2222222		|467899		|Pasto	 |-3	|Activo			|Ahorros	|001001030000	|Virtual|Virtual|852123	|700|
+|88888|Papas Arturo	|Cédula de extrajería	|33534654		|465447474|Bogotá	 |2		|Activo			|Ahorros	|001001030000	|Virtual|Virtual|852123	|700|
+|200	|Country			|Nit									|123456789	|10000000	|Medellín|0,5	|Activo			|Ahorros	|00100120801	|Física	|Físico	|852123	|700|
+|100	|Country			|Nit									|223456789	|10000000	|Medellín|0,5	|Activo			|Ahorros	|00100120801	|Física	|Físico	|852123	|700|
+|100	|Country			|Nit									|123456789	|55555555	|Ibague	 |0,5	|Activo			|Ahorros	|00100120801	|Física	|Físico	|852123	|700|
+|200	|Versalles		|Cédula de ciudadanía	|9999999		|2000000	|Bogotá	 |0,5	|Activo			|Corriente|00100103018	|Física	|Físico	|852123	|702|
+|300	|Paisapan			|Cédula de extrajería	|888888			|300000000|Cali	 	 |1		|Inactivo		|Corriente|00100103018	|Virtual|Virtual|852123	|702|
+|400	|JuanchoLlanta|Cédula de ciudadanía	|333333			|0				|Pereira |2		|Activo			|Corriente|00100120999	|Física	|Virtual|852123	|700|
+|100	|Country			|Nit									|123456789	|55555555	|Ibague	 |0,5	|Suspendido	|Ahorros	|00100120801	|Virtual|Físico	|852123	|700|
+|100	|Country			|Nit									|123456789	|55555555	|Ibague	 |0,5	|Suspendido	|Ahorros	|00100120801	|Virtual|Físico	|852123	|700|
