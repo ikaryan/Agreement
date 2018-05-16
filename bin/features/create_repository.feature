@@ -21,4 +21,4 @@ Feature: Create repository
   Examples:
   |   username  |  password   |    name    |         description         |
   | ikaryan | babylon75  | TEST_BDD_2 |  repository for bdd tests 2 |
-  | an_username | a_password  | TEST_BDD_3 |  repository for bdd tests 3 |
+  | lpgranad | caregallina |  repository for bdd tests 3 |
